@@ -27,7 +27,7 @@ const Services: React.FC = () => {
     ];
 
     return (
-        <section id="services" className="section-container bg-white">
+        <section id="services" className="section-container bg-white min-h-screen flex flex-col justify-center">
             <div className="text-center mb-16">
                 <motion.h2
                     initial={{ opacity: 0, y: 20 }}

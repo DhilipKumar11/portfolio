@@ -7,7 +7,7 @@ const About: React.FC = () => {
 
 
     return (
-        <section id="about" className="section-container bg-white">
+        <section id="about" className="section-container bg-white min-h-screen flex flex-col justify-center">
             <div className="max-w-4xl mx-auto">
                 {/* Content Side */}
                 <motion.div

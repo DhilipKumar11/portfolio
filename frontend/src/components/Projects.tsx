@@ -46,11 +46,7 @@ const Projects: React.FC = () => {
                                 alt={project.title}
                                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             />
-                            <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
-                                <button className="bg-primary text-white px-6 py-2 rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                    View Project
-                                </button>
-                            </div>
+
                         </div>
 
                         <div className="p-8">
@@ -66,11 +62,7 @@ const Projects: React.FC = () => {
 
                             <div className="flex items-center justify-between">
                                 <span className="font-semibold text-accent">{project.category}</span>
-                                <a href={project.link} className="w-10 h-10 rounded-full bg-light flex items-center justify-center text-dark hover:bg-primary hover:text-white transition-colors">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                    </svg>
-                                </a>
+
                             </div>
                         </div>
                     </motion.div>

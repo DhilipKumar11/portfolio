@@ -2,7 +2,7 @@ import React from 'react';
 
 const Education: React.FC = () => {
     return (
-        <section id="education" className="section-container bg-light/50">
+        <section id="education" className="section-container bg-light/50 min-h-screen flex flex-col justify-center">
             <div className="text-center mb-16">
                 <div className="text-secondary font-semibold mb-2">- Education & Work</div>
                 <h2 className="text-3xl font-bold text-dark">

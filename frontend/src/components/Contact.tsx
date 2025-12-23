@@ -22,9 +22,9 @@ const Contact: React.FC = () => {
         e.preventDefault();
         setStatus('sending');
         try {
-            // Replace with your actual backend URL when deployed
-            // For now, it will fail or we can mock it
-            await axios.post('http://localhost:5000/api/contact', formData);
+            // Use environment variable for API URL in production, fallback to localhost for dev
+            const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/contact';
+            await axios.post(apiUrl, formData);
             setStatus('success');
             setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
         } catch (error) {
